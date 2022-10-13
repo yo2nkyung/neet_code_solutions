@@ -6,17 +6,15 @@
 */
 int numberOfSteps(int num){
     int count = 0;
-    while (num >= 0) {
-        if (num == 0) break;
-        
+    
+    while (num != 0) {        
         if (num % 2 == 0) {
             num /= 2;
             count++;
         }
         else {
-            num -= 1; count++;
-            if (num == 0) break;
-            num /= 2; count++;
+            num -= 1;
+            count++;
         }
     }
     

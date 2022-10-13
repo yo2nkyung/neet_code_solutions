@@ -25,3 +25,5 @@
 	<li><code>1 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 </div>
+
+![image](https://user-images.githubusercontent.com/65727525/195529678-0b828418-c874-49ad-a810-4e1df404a77b.png)

@@ -6,9 +6,7 @@ class Solution(object):
             if num == 0 :
                 arr_tmp.append(num)
             arr_tmp.append(num)
-        
-        result = arr_tmp[:len(arr)]
-        
+                
         for i in range(len(arr)) :
             arr[i] = arr_tmp[i]
         

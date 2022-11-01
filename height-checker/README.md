@@ -43,3 +43,22 @@ All indices match.
 	<li><code>1 &lt;= heights[i] &lt;= 100</code></li>
 </ul>
 </div>
+
+        '''
+        expected = [0] * len(heights)
+        
+        for i in range(len(heights)):
+            expected[i] = heights[i]
+        
+        result = 0
+        left = 0
+        right = len(heights) - 1
+        
+        while left < right:
+            if expected[left] > expected[right]:
+                expected[left], expected[right] = expected[right], expected[left]
+            elif expected[left] == expected[right] :
+                right -= 1
+            else:
+                left += 1 
+        '''

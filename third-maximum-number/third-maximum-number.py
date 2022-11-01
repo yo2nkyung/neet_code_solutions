@@ -3,9 +3,7 @@ class Solution(object):
         
         expected = sorted(nums, reverse=True)
         largest = expected[0]
-        
-        if len(expected) < 3:
-            return largest
+
         count = 0
         
         for i in range(1, len(expected)):
@@ -16,7 +14,7 @@ class Solution(object):
             if count == 2:
                 break
         
-        if count < 2:
+        if count < 2 or len(expected) < 3:
             largest = expected[0]
         
         return largest
